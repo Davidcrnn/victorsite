@@ -6,3 +6,9 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name= 'about.html'
+
+class BioPageView(TemplateView):
+    template_name = 'bio.html'
+
+class MentionPageView(TemplateView):
+    template_name = 'mentions.html'
