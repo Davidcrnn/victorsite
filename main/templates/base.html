@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Victor de rossi</title>
+</head>
+<body>
+  <header>
+      <a href="{% url 'home' %}">HOME</a>
+      <a href="{% url 'about' %}">ABOUT</a>
+  </header>
+
+  {% block content%}
+
+  {% endblock content%}
+</body>
+</html>
