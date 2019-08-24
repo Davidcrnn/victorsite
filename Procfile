@@ -1,1 +1,1 @@
-web: gunicorn victorsite_project.wsgi --log-file -
+web: gunicorn victorsite.wsgi --log-file -
