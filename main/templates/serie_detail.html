@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<h1>Detail Series</h1>
+{% for produit in serie.get_products %}
+    <p> {{produit.title}} </p>
+    <p> {{ produit.description }}</p>
+    <a href="{% url 'produit-detail' produit.id %}"> Link</a>
+{% endfor %}
+
+
+</ul>
+{% endblock content%}

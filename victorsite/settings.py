@@ -25,7 +25,7 @@ SECRET_KEY = '&s0sm2%goi-z7(u2igomts77%ye95+z)r-w!xrfkgj^)u#8v9^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['vdrsite.herokuapp.com']
 
 
 # Application definition
@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'victorsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'victordb',
-        'USER': 'postgres',
-        'PASSWORD': 'david',
+        'NAME': 'vicsite',
+        'USER': 'victor',
+        'PASSWORD': 'Anaconda11',
         'HOST': 'localhost',
         'PORT': '5433',
     }
@@ -122,4 +122,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, 'static')
+]
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
 STATIC_URL = '/static/'
+
+
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media_cdn')

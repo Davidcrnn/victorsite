@@ -4,4 +4,12 @@
 
 <h1>This is the home page</h1>
 
+<ul>
+    {% for ser in serie_name %}
+    <li>{{ser.nom}}</li>
+    <li><a href="{% url 'serie' %}">Link</a>      </li>
+    {% endfor %}
+</ul>
+
+
 {% endblock content%}
