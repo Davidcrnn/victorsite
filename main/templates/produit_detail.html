@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load staticfiles  %}
+{% block content%}
+<h1>Detail Produit</h1>
+
+    <p> {{produit.title}} </p>
+    <p> {{ produit.description }}</p>
+    <img src="{{ produit.image.url }}" alt="" width="300px">
+
+
+</ul>
+{% endblock content%}

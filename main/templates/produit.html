@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block content%}
+<h1>Index Produit</h1>
+
+<ul>
+    {% for ser in object_list %}
+    <li> {{ ser.nom}} <a href="">Link</a></li>
+    {% endfor%}
+</ul>
+{% endblock content%}
